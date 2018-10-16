@@ -31,3 +31,8 @@ resources/<br />
 , serverUrl:  "/admin/ueditor/controller"
 
 <br />
+
+4、网上有不少教程会让你把 ueditor/jsp/lib/ueditor-1.1.2.jar 导入到你的项目中，因为在第1步控制器中已经重写了上传方法，所以我们不必导入这些jar包。
+
+<br />
+
