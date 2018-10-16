@@ -23,7 +23,11 @@ resources/<br />
 
 <br />
 
-2、当前GitHub项目中的 controller/ 为控制器、util/ 为工具类、resources/application.properties 为项目配置参数，请将这3个文件合理放入你的项目中，确保正常。
+2、当前GitHub项目中的 ：<br />
+controller/ ：为控制器，重写UEditor上传方法<br />
+util/ ：为工具类，上传操作封装<br />
+resources/application.properties ：为项目配置参数<br />
+请将这3个文件合理放入你的项目中，确保能正常运行，访问 /admin/ueditor/controller?action=config 看是否正常输出json。
 
 <br />
 
@@ -32,7 +36,9 @@ resources/<br />
 
 <br />
 
-4、网上有不少教程会让你把 ueditor/jsp/lib/ueditor-1.1.2.jar 导入到你的项目中，因为在第1步控制器中已经重写了上传方法，所以我们不必导入这些jar包。
+4、网上有不少教程会让你把 ueditor/jsp/lib/ueditor-1.1.2.jar 导入到你的项目中，因为在第1步控制器中已经重写了上传方法，所以我们不必导入这些jar包。为安全起见，我们可以把 ueditor/jsp/ 整个文件夹删除掉。
 
 <br />
+### 注意事项
+上述第3步操作中的配置值一定要与第1步操作中的控制器访问路径一致！！！
 
